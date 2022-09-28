@@ -6,7 +6,7 @@ agent {
 
 stages{
 
-stage ('install apache'){
+stage ('install apache') {
 
 steps {
         sh "yum install httpd -y"
@@ -14,7 +14,7 @@ steps {
 }
 }
 }
-stage ('start apache'){
+stage ('start apache') {
 
 steps {
         sh "service start"
